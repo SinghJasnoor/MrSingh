@@ -1,0 +1,116 @@
+/* General Styles */
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  color: #333;
+  line-height: 1.5;
+  background-color: #f7f7f7;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 36px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+/* Days Calculator Styles */
+#days-calculator-form label,
+#time-zone-converter-form label,
+#translator-form label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+#days-calculator-form input[type="date"],
+#time-zone-converter-form input[type="datetime-local"],
+#translator-form textarea {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  margin-bottom: 20px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+#days-calculator-form button[type="submit"],
+#time-zone-converter-form button[type="submit"],
+#translator-form button[type="submit"] {
+  background-color: #4CAF50;
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#days-calculator-form button[type="submit"]:hover,
+#time-zone-converter-form button[type="submit"]:hover,
+#translator-form button[type="submit"]:hover {
+  background-color: #3e8e41;
+}
+
+#days-result,
+#time-zone-result,
+#translated-text {
+  margin-top: 20px;
+  padding: 10px;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  background-color: #fff;
+  border-radius: 4px;
+}
+
+/* Message Styles */
+#message-section {
+  margin-top: 50px;
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  color: #4CAF50;
+}
+
+/* Media Queries */
+@media screen and (max-width: 600px) {
+  .container {
+    padding: 10px;
+  }
+
+  h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+
+  #days-calculator-form input[type="date"],
+  #time-zone-converter-form input[type="datetime-local"],
+  #translator-form textarea {
+    font-size: 14px;
+  }
+
+  #days-calculator-form button[type="submit"],
+  #time-zone-converter-form button[type="submit"],
+  #translator-form button[type="submit"] {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+
+  #days-result,
+  #time-zone-result,
+  #translated-text {
+    font-size: 16px;
+  }
+}
